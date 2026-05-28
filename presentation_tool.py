@@ -7,7 +7,7 @@ def read_presentation(file_path: str) -> str:
     """
     Reads the text content from a PowerPoint (.pptx) file.
     Use this tool whenever the user asks you to summarize, read, or extract notes from a PPT or PPTX file.
-    Only pass the file name (e.g. 'Lecture 4 Unit 1.pptx') if it's in the sandbox folder.
+    Only pass the file name (e.g. 'sample_presentation.pptx') if it's in the sandbox folder.
     """
     base_path = "sandbox"
     # Ensure it's looking in the right folder based on the file tools setup
