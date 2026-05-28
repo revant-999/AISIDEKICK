@@ -13,7 +13,7 @@ This project bridges the gap between digital Large Language Models and physical 
 ## 🛠️ Tech Stack
 
 - **Framework:** `LangChain` / `LangGraph`
-- **LLM Routing:** OpenRouter (Claude 3.5 Sonnet)
+- **LLM Routing:** OpenRouter (Claude 4.6 Sonnet)
 - **UI:** `Rich` (Interactive Terminal UI)
 - **Hardware Integration:** Python `pyserial` ↔️ C++ (`Arduino Uno R4 WiFi`)
 - **Browser Control:** `playwright`
