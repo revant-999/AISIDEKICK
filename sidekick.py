@@ -49,6 +49,7 @@ class Sidekick:
         await self.build_graph()
 
     def worker(self, state: State) -> Dict[str, Any]:
+        sandbox_path = os.path.abspath("sandbox")
         system_message = f"""You are a helpful assistant that can use tools to complete tasks.
     You keep working on a task until either you have a question or clarification for the user, or the success criteria is met.
     You have many tools to help you, including tools to browse the internet, navigating and retrieving web pages.
@@ -70,7 +71,7 @@ class Sidekick:
     
     If the user asks you to literally "open a file" (like a PPTX, PDF, etc.) visually in the browser/Playwright:
     1. Use the Playwright tool `navigate_browser` to open the file URL.
-    2. The URL must be in absolute file URI format: `file:///home/revant/Documents/Projectfiles/AIsidekick/sandbox/[filename]` 
+    2. The URL must be in absolute file URI format: `file://{sandbox_path}/[filename]` 
     3. Be aware that standard browsers usually download PPTX files instead of rendering them in-tab, but you should still execute the navigation command.
     
     SPECIAL CAPABILITY - ARDUINO HARDWARE INTEGRATION:
