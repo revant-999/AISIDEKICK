@@ -40,7 +40,7 @@ def interact_with_arduino(command: str):
     Allowed commands: 
     - 'pomodoro_<minutes>' (starts a timer for X minutes, e.g. 'pomodoro_25')
     - 'pomodoro_sec_<seconds>' (starts a timer for X seconds, e.g. 'pomodoro_sec_30' for testing)
-    - 'fan_on', 'fan_off' (turns the motor/fan on or off)
+    - 'light_on', 'light_off' (turns the study light on or off)
     """
     port = os.getenv("ARDUINO_PORT", "/dev/ttyACM0")
     
