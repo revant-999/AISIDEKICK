@@ -38,7 +38,6 @@ def interact_with_arduino(command: str):
     """
     Control testing hardware - Arduino Uno R4 WiFi over USB Serial.
     Allowed commands: 
-    - 'thinking', 'processing', 'greeting' (updates LED matrix)
     - 'pomodoro_<minutes>' (starts a timer for X minutes, e.g. 'pomodoro_25')
     - 'pomodoro_sec_<seconds>' (starts a timer for X seconds, e.g. 'pomodoro_sec_30' for testing)
     - 'fan_on', 'fan_off' (turns the motor/fan on or off)
@@ -104,7 +103,7 @@ async def other_tools():
     arduino_tool = Tool(
         name="interact_with_arduino",
         func=interact_with_arduino,
-        description="Use this to control the physical Arduino LED matrix status ('thinking', 'processing', 'greeting', 'pomodoro_X') or manage the study light with 'light_on'/'light_off'."
+        description="Use this to control the physical Arduino hardware (e.g. 'pomodoro_X') or manage the study light with 'light_on'/'light_off'."
     )
     
     notification_tool = StructuredTool.from_function(

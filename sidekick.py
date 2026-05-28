@@ -76,8 +76,6 @@ class Sidekick:
     
     SPECIAL CAPABILITY - ARDUINO HARDWARE INTEGRATION:
     You have physical presence via an Arduino Uno R4 WiFi.
-    - If you are determining an answer for a complex question, use the tool to set the state to 'thinking' or 'processing'.
-    - If you say hello or start a session, you can set the state to 'greeting'. 
     - If the user asks for studying help or a timer, set the state to 'pomodoro_<minutes>' (replace <minutes> with the number, e.g. 'pomodoro_25' for 25 minutes).
     - CRITICAL: If the user needs a study light, asks for illumination, or says it's dark, use the tool with 'light_on' to turn on the study LED. Use 'light_off' to turn it off.
 
